@@ -1,0 +1,31 @@
+/* src/app.css */
+
+/* Global Reset */
+/* src/index.css */
+@import "tailwindcss";
+.sample-scroll-container {
+  scrollbar-width: none; /* Firefox */
+}
+.sample-scroll-container::-webkit-scrollbar {
+  height: 6px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.sample-scroll-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+}
+
+/* Show scrollbar only on parent hover */
+.group:hover .sample-scroll-container::-webkit-scrollbar {
+  opacity: 1;
+  height: 6px;
+}
+.placecolor{
+ color:#e0e0e0 ;
+ font-weight:300;
+}
+
+
+
+
